@@ -1,0 +1,284 @@
+/*
+===========================
+Start Media Os Small Screen
+===========================
+*/
+@media(max-width:1190px){
+    /*Start Header Section*/
+    #header{
+        background-size: 1150px;
+    }
+    .name{
+        left: 10%;
+        top: 50%;
+        -webkit-transform: translate(-10%,-50%);
+        -moz-transform: translate(-10%,-50%);
+        -o-transform: translate(-10%,-50%);
+        transform: translate(-10%,-50%);
+    }
+    /*End Header Section*/
+
+
+    /*Start About-Me Section*/
+    .about-image img{
+        height: 400px;
+    }
+    /*End About-Me Section*/
+
+
+    /*Start Services Section*/
+    #services{
+        height: auto;
+    }
+    .services-box-container{
+        flex-wrap: wrap;
+    }
+    .service-box{
+        flex-grow: 1;
+    }
+    .service-box-text{
+        text-align: center;
+    }
+    /*End Services Section*/
+
+
+    /*Start Contact-Me Section*/
+    #contact-form form{
+        width: 95% !important;
+    }
+    /*End Contact-Me Section*/
+}
+/*
+===========================
+End Media Os Small Screen
+===========================
+*/
+/*
+===========================
+Start Media Os Small Screen
+===========================
+*/
+@media(max-width: 970px){
+    /*Start Header Section*/
+    #header{
+        background-image: none !important;
+    }
+    .name{
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -o-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+    }
+    /*End Header Section*/
+
+
+    /*Start About-Me Section*/
+    #about-me{
+        justify-content: center;
+        padding-top: 0;
+    }
+    .about-text{
+        width: 90%;
+    }
+    .about-text h1{
+        font-size: 4rem;
+    }
+    .about-image{
+        display: none;
+    }
+    /*End About-Me Section*/
+    
+    
+    /*Start Portofilo Section*/
+    .port-container{
+        width: 100%;
+    }
+    /*End Portofilo Section*/
+}
+/*
+===========================
+End Media Os Small Screen
+===========================
+*/
+
+/*
+===========================
+Start Media Os Small Screen
+===========================
+*/
+@media(max-width:900px){
+    /*Start Header Section*/    
+    .toggle{
+        display: block;
+    }
+    .toggle:before{
+        content: '\f0c9';
+        font-family: fontAwesome;
+        line-height: 0;
+        margin-left: -35px;
+    }
+    .toggle.active:before{
+        content: '\f00d';
+    }
+    nav{
+        padding: 10px 30px;
+    }
+    nav ul{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        background-color: #0f0f0f;
+        top: 50px;
+        left: 0;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+        overflow: hidden;
+        border: 1px solid #1f1f1f;
+        display: none !important;
+        margin: 0;
+        padding: 0;
+    }
+    nav ul li a{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .active-menu{
+        display: block !important;
+    }
+    /*End Header Section*/   
+    
+    
+    /*Start Portofilo Section*/
+    .port-container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        height: auto;
+        gap: 20px;
+    }
+    /*End Portofilo Section*/
+
+
+    /*Start Contact-Me Section*/
+    #contact-me h1{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    #contact-form{
+        padding: 20px;
+        height: auto;
+        box-sizing: border-box;
+    }
+    #contact-form form{
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        width: 90% !important;
+    }
+    #contact-form form h1{
+        margin: 5px 0;
+    }
+    .form-left,.form-right{
+        width: 100%;
+        border: none;
+    }
+    .formleft-name,.formleft-email{
+        width: 100%;
+    }
+    .form-left input{
+        width: 100%;
+        border: none;
+        background-color: #262626 !important;
+        padding: 10px;
+        box-sizing: border-box;
+        height: 40px;
+    }
+    textarea{
+        background-color: #262626 !important;
+        margin: 10px 0;
+        padding: 10px;
+        height: 200px !important;
+        width: 100% !important;
+    }
+    .formright-message{
+        margin: 0;
+    }
+    /*End Contact-Me Section*/
+}
+/*
+===========================
+End Media Os Small Screen
+===========================
+*/
+/*
+===========================
+Start Media of Small Screen
+===========================
+*/
+@media(max-width:600px){
+    
+    /*Start Header Section*/
+    .name{
+        width: 60%;
+    }
+    .social{
+        left: 50px;
+        -webkit-transform: translateX(-10px);
+        -moz-transform: translateX(-10px);
+        -o-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+    .arrow{
+        margin-bottom: 20px;
+    }
+    /*End Header Section*/
+
+
+    /*Start Portofilo Section*/
+    .port-container{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    /*End Portofilo Section*/
+
+    /*Start Contact-Me Section*/
+    #contact-me h1{
+        font-size: 1.2rem;
+        margin: 0 10%;
+    }
+    /*End Contact-Me Section*/
+}
+/*
+===========================
+End Media Of Small Screen
+===========================
+*/
+
+/*
+===========================
+Start Media Of Small Screen
+===========================
+*/
+@media(max-width:400px){
+    /*Start Services Section*/
+    .service-box{
+        width: 100%;
+        height: 400px;
+    }
+    /*End Services Section*/
+}
+/*
+===========================
+End Media Of Small Screen
+===========================
+*/
