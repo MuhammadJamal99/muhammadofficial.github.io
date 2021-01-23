@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title Icon-->
+    <link rel="shortcut icon" href="public/assets/images/favicon.ico" type="image/x-icon"/>
+    <!--Title-->
+    <title>phone shop</title>
+    <!-- Glide Core Style Sheet -->
+    <link rel="stylesheet" href="public/assets/css/glide.core.min.css"/>
+    <!-- Glide Theme Style Sheet -->
+    <link rel="stylesheet" href="public/assets/css/glide.theme.min.css"/>
+    <!-- AOS Style Sheet -->
+    <link rel="stylesheet" href="public/assets/css/aos.css"/>
+    <!--Bootstrap Style Sheet-->
+    <link rel="stylesheet" href="public/assets/css/bootstrap.min.css"/>
+    <!--Font Awosome Style Sheet-->
+    <link rel="stylesheet" href="public/assets/css/all.min.css"/>
+    <!--Main Style Sheet-->
+    <link rel="styleSheet" href="public/assets/css/style.css"/>
+</head>
+<body>
+  <!-- start header -->
+  <header class="position-relative header">
+
+    <!-- start Navbar -->
+    <div class="position-relative navigation">
+      <div class="container-fluid">
+        <nav class="w-100 navbar navbar-expand-lg navbar-light bg-light">
+          <svg>
+            <use xlink:href="public/assets/images/sprite.svg#icon-menu"></use>
+          </svg>
+          <a class="navbar-brand" href="/">PHONE</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynav">
+              <svg>
+                <use xlink:href="public/assets/images/sprite.svg#icon-menu"></use>
+              </svg>
+          </button>
+          <div class="collapse navbar-collapse" id="mynav">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- end Navbar -->
+
+    <!-- start hero Section -->
+    <section class="position-relative w-100 hero">
+
+      <!-- start slider -->
+      <div class="glide" id="glide-1">
+
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+
+            <!-- start slide one -->
+              <li class="glide__slide">
+                <div class="d-flex justify-content-center align-items-center position-relative pt-5 my-0 mx-auto h-100 hero-product">
+
+                  <div class="py-0 px-5 hero-product-left">
+                    <span>New Inspiration 2020</span>
+                    <h2 class="h1 my-3 mx-0 font-weight-bolder">Phone Made For You!</h2>
+                    <p class="mb-3">Trending From Mobile and Headphone Style Collections</p>
+                    <a href="#"><button class="d-inline-block mt-3 mb-3 py-3 px-5 hero-product-btn">SHOP NOW</button></a>
+                  </div>
+                  <div class="text-center hero-product-right">
+                    <div class="product-img-container">
+                      <img src="public/assets/images/banner_01.png" alt="Product One" class="banner_01">
+                    </div>
+                  </div>
+                </div>
+              </li>
+            <!-- end slide one -->
+
+            <!-- start slide one -->
+              <li class="glide__slide">
+                <div class="d-flex justify-content-center align-items-center position-relative pt-5 my-0 mx-auto h-100 hero-product">
+
+                  <div class="py-0 px-5 hero-product-left">
+                    <span>New Inspiration 2020</span>
+                    <h2 class="h1 my-3 mx-0 font-weight-bolder">Cell Phones Top deals!</h2>
+                    <p class="mb-3">Trending From Mobile and Headphone Style Collections</p>
+                    <a href="#"><button class="d-inline-block mt-3 mb-3 py-3 px-5 hero-product-btn">SHOP NOW</button></a>
+                  </div>
+                  <style>
+
+                  </style>
+                  <div class="text-center hero-product-right">
+                    <div class="product-img-container">
+                      <img src="public/assets/images/banner_02.png" alt="Product One" class="banner_02">
+                    </div>
+                  </div>
+                </div>
+              </li>
+            <!-- end slide one -->
+            
+          </ul>
+          
+        </div>
+
+        <!-- slider bullets -->
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+        </div>
+
+        <!-- slider arrows -->
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="rounded-circle p-4 glide__arrow glide__arrow--left" data-glide-dir="<">
+            <svg>
+              <use xlink:href="public/assets/images/sprite.svg#icon-arrow-left2"></use>
+            </svg>
+          </button>
+          <button class="rounded-circle p-4 position-absolute glide__arrow glide__arrow--right" data-glide-dir=">">
+            <svg>
+              <use xlink:href="public/assets/images/sprite.svg#icon-arrow-right2"></use>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+      <!-- end slider -->
+
+    </section>
+    <!-- end hero Section -->
+  
+  </header>
+  <!-- end header -->
+
+
+  <!-- start main content -->
+  <main id="main">
+  <!-- start main container -->
+    <div class="container">
+      <style>
+
+/* .collection-container {
+  height: 100%;
+} */
+
+.collection-box {
+  height: 30rem;
+  background-color: var(--firstcolor);
+}
+.img__container {
+  width: 25rem;
+}
+.collection-box img.collection_01 {
+  width: 60%;
+}
+
+.collection-box img.collection_02 {
+  width: 75%;
+}
+
+.collecection-content {
+  height: 100%;
+}
+
+.collecection-content span {
+  color: var(--black);
+}
+
+.collecection-content a:link,
+.collecection-content a:visited {
+  font-weight: 700;
+  display: inline-block;
+  padding: 1rem 1.4rem;
+  margin-top: 1.3rem;
+  border-radius: 3rem;
+  border: 2px solid var(--secondcolor);
+  color: var(--firstcolor);
+  background-color: var(--secondcolor);
+  transition: all 0.3s ease-in-out;
+}
+.collecection-content a:hover {
+  background-color: transparent;
+  color: var(--secondcolor);
+}
+      </style>
+      
+      <!-- start collection section -->
+      <section id="collection" class="py-5 px-0 my-5 mx-0 collection">
+        
+        <div class="container d-flex justify-content-between align-items-center py-0 px-4 collection-container" data-aos="fade-up" data-aos-duration="1200">
+          <div class="row">
+            
+            <div class="col-md d-flex justify-content-around align-items-center p-3 m-4 collection-box">
+
+              <div class="img__container">
+                <img class="collection_02" src="public/assets/images/collection_02.png" alt="">
+              </div>
+  
+              <div class="d-flex justify-content-center align-items-center collecection-content">
+                <div class="collection__data">
+                  <span>New Colors Introduced</span>
+                  <h2 class="h1">HEADPHONES</h2>
+                  <a href="#">SHOP NOW</a>
+                </div>
+              </div>
+  
+            </div>
+  
+            <div class="col-md d-flex justify-content-around align-items-center p-3 m-4 collection-box">
+              <div class="text-center img__container">
+                <img class="collection_01" src="public/assets/images/collection_01.png" alt="">
+              </div>
+  
+              <div class="d-flex justify-content-center align-items-center collecection-content">
+                <div class="collection__data">
+                  <span>Phone Device Presets</span>
+                  <h2 class="mt-2 h1">SMARTPHONES</h2>
+                  <a href="#">SHOP NOW</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+      <!-- end collection section -->
+
+    </div>
+  <!-- end main container -->
+
+  </main>
+  <!-- end main content -->
+
+
+
+    <!-- JQuery Library Script-->
+    <script src="public/assets/js/jQuery 3.5.1.min.js"></script>
+    <!-- Glide Library Script -->
+    <script src="public/assets/js/glide.min.js"></script>
+    <!-- AOS Library Script -->
+    <script src="public/assets/js/aos.js"></script>
+    <!-- Popper Library Script-->
+    <script src="public/assets/js/popper.min.js"></script>
+    <!-- Bootstrap Library Script-->
+    <script src="public/assets/js/bootstrap.min.js"></script>
+    <!-- Font Awosome -->
+    <script src="https://kit.fontawesome.com/cd0c469065.js" crossorigin="anonymous"></script>
+    <!-- Slider JavaScript -->
+    <script src="public/assets/js/slider.js"></script>
+    <!-- Main JavaScript -->
+    <script src="public/assets/js/app.js"></script>
+</body>
+</html>
+<!-- start slide one -->
+<!-- <li class="col-sm-12 glide__slide">
+  <div class="d-flex justify-content-center align-items-center position-relative h-100 pt-5 my-0 mx-auto hero-product">
+    <div class="py-0 px-5 hero-product-left">
+      <span>New Inspiration 2020</span>
+      <h2 class="my-3 mx-0 h1">Phone Made For You</h2>
+      <p class="mb-3">Trending From Mobile and Headphone Style Collections</p>
+      <a href="#"><button class="m-3 d-inline-block dt py-3 px-5 hero-product-btn">SHOP NOW</button></a>
+    </div>
+    <div class="position-relative text-center hero-product-right">
+      <div class="product-img-container">
+        <img src="public/assets/images/banner_01.png" alt="Product One" class="banner_01">
+      </div>
+    </div>
+  </div>
+</li> -->
+<!-- end slide one -->
+
+<!-- start slide two -->
+<!-- <li class="col-sm-12 glide__slide">
+  <div class="d-flex justify-content-center align-items-center position-relative h-100 pt-5 my-0 mx-auto hero-product">
+    <div class="py-0 px-5 hero-product-left">
+      <span>New Inspiration 2020</span>
+      <h2 class="my-3 mx-0 h1">Phone Made For You</h2>
+      <p class="mb-3">Trending From Mobile and Headphone Style Collections</p>
+      <a href="#"><button class="m-3 d-inline-block dt py-3 px-5 hero-product-btn">SHOP NOW</button></a>
+    </div>
+    <div class="position-relative text-center hero-product-right">
+      <div class="product-img-container">
+        <img src="public/assets/images/banner_02.png" alt="Product One" class="banner_02">
+      </div>
+    </div>
+  </div>
+</li> -->
+<!-- end slide two -->
