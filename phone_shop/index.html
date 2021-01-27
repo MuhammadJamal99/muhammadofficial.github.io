@@ -7,53 +7,53 @@
     <link rel="shortcut icon" href="public/assets/images/favicon.ico" type="image/x-icon"/>
     <!--Title-->
     <title>phone shop</title>
+    <!--Bootstrap Style Sheet-->
+    <link rel="stylesheet" href="public/assets/css/bootstrap.min.css"/>
+    <!--Font Awosome Style Sheet-->
+    <link rel="stylesheet" href="public/assets/css/all.min.css"/>
     <!-- Glide Core Style Sheet -->
     <link rel="stylesheet" href="public/assets/css/glide.core.min.css"/>
     <!-- Glide Theme Style Sheet -->
     <link rel="stylesheet" href="public/assets/css/glide.theme.min.css"/>
     <!-- AOS Style Sheet -->
     <link rel="stylesheet" href="public/assets/css/aos.css"/>
-    <!--Bootstrap Style Sheet-->
-    <link rel="stylesheet" href="public/assets/css/bootstrap.min.css"/>
-    <!--Font Awosome Style Sheet-->
-    <link rel="stylesheet" href="public/assets/css/all.min.css"/>
     <!--Main Style Sheet-->
     <link rel="styleSheet" href="public/assets/css/style.css"/>
 </head>
 <body>
   <!-- start header -->
-  <header class="position-relative header">
+  <header class="position-relative header" id="home">
 
     <!-- start Navbar -->
-    <div class="position-relative navigation">
-      <div class="container-fluid">
-        <nav class="w-100 navbar navbar-expand-lg navbar-light bg-light">
-          <svg>
-            <use xlink:href="public/assets/images/sprite.svg#icon-menu"></use>
-          </svg>
-          <a class="navbar-brand" href="/">PHONE</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynav">
-              <svg>
-                <use xlink:href="public/assets/images/sprite.svg#icon-menu"></use>
-              </svg>
-          </button>
-          <div class="collapse navbar-collapse" id="mynav">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <form class="form-inline my-2 my-lg-0">
-                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Phone</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-navbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#category">Category</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#news">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav navbar-left">
+
+          </ul>
+        </div>
       </div>
-    </div>
+    </nav>
     <!-- end Navbar -->
+
 
     <!-- start hero Section -->
     <section class="position-relative w-100 hero">
@@ -141,155 +141,1081 @@
 
   <!-- start main content -->
   <main id="main">
-  <!-- start main container -->
-    <div class="container">
-      <style>
 
-/* .collection-container {
-  height: 100%;
-} */
-
-.collection-box {
-  height: 30rem;
-  background-color: var(--firstcolor);
-}
-.img__container {
-  width: 25rem;
-}
-.collection-box img.collection_01 {
-  width: 60%;
-}
-
-.collection-box img.collection_02 {
-  width: 75%;
-}
-
-.collecection-content {
-  height: 100%;
-}
-
-.collecection-content span {
-  color: var(--black);
-}
-
-.collecection-content a:link,
-.collecection-content a:visited {
-  font-weight: 700;
-  display: inline-block;
-  padding: 1rem 1.4rem;
-  margin-top: 1.3rem;
-  border-radius: 3rem;
-  border: 2px solid var(--secondcolor);
-  color: var(--firstcolor);
-  background-color: var(--secondcolor);
-  transition: all 0.3s ease-in-out;
-}
-.collecection-content a:hover {
-  background-color: transparent;
-  color: var(--secondcolor);
-}
-      </style>
+    <!-- start collection section -->
+    <section id="collection" class="py-5 px-0 my-5 mx-0 collection">
       
-      <!-- start collection section -->
-      <section id="collection" class="py-5 px-0 my-5 mx-0 collection">
-        
-        <div class="container d-flex justify-content-between align-items-center py-0 px-4 collection-container" data-aos="fade-up" data-aos-duration="1200">
-          <div class="row">
-            
-            <div class="col-md d-flex justify-content-around align-items-center p-3 m-4 collection-box">
+      <div class="container d-flex justify-content-between align-items-center py-0 px-4 collection-container" data-aos="fade-up" data-aos-duration="1200">
+        <div class="row">
+          
+          <div class="col-md d-flex justify-content-around align-items-center p-3 m-4 collection-box">
 
-              <div class="img__container">
-                <img class="collection_02" src="public/assets/images/collection_02.png" alt="">
-              </div>
-  
-              <div class="d-flex justify-content-center align-items-center collecection-content">
-                <div class="collection__data">
-                  <span>New Colors Introduced</span>
-                  <h2 class="h1">HEADPHONES</h2>
-                  <a href="#">SHOP NOW</a>
-                </div>
-              </div>
-  
+            <div class="img-container">
+              <img class="collection_02" src="public/assets/images/collection_02.png" alt="">
             </div>
-  
-            <div class="col-md d-flex justify-content-around align-items-center p-3 m-4 collection-box">
-              <div class="text-center img__container">
-                <img class="collection_01" src="public/assets/images/collection_01.png" alt="">
+
+            <div class="d-flex justify-content-center align-items-center collecection-content">
+              <div class="collection__data">
+                <span>New Colors Introduced</span>
+                <h2 class="h1">HEADPHONES</h2>
+                <a href="#" class="d-inline-block">SHOP NOW</a>
               </div>
-  
-              <div class="d-flex justify-content-center align-items-center collecection-content">
-                <div class="collection__data">
-                  <span>Phone Device Presets</span>
-                  <h2 class="mt-2 h1">SMARTPHONES</h2>
-                  <a href="#">SHOP NOW</a>
-                </div>
+            </div>
+
+          </div>
+
+          <div class="col-md d-flex justify-content-around align-items-center p-3 m-4 collection-box">
+            <div class="text-center img-container">
+              <img class="collection_01" src="public/assets/images/collection_01.png" alt="">
+            </div>
+
+            <div class="d-flex justify-content-center align-items-center collecection-content">
+              <div class="collection__data">
+                <span>Phone Device Presets</span>
+                <h2 class="mt-2 h1">SMARTPHONES</h2>
+                <a href="#" class="d-inline-block">SHOP NOW</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <!-- end collection section -->
+
+    <!-- start latest products section -->
+    <section class="latest-products" id="latest-products">
+      <div class="container" data-aos="fade-up" data-aos-duration="1200">
+
+        <div class="row justify-content-center m-3 p-4 first-bg">
+          <div class="mr-4 section-titles">
+            <div class="justify-content-center align-items-center section-title">
+              <span class="dot"></span>
+              <h3 class="h2 pl-2 primary-title">latest-products</h3>
+            </div>
+          </div>
+        </div>
+        <!-- start latest products slider -->
+          <div class="row">
+            <div class="glide" id="glide-2">
+              
+              <div class="glide__track" data-glide-el="track">
+
+                <ul class="glide__slides">
+
+                  <!-- start slide one -->
+                    <li class="glide__slide">
+                      <div class="position-relative text-center d-flex flex-column product">
+                        <!-- start product header -->
+                        <div class="product-header">
+                          <img src="public/assets/images/products/iPhone/iphone6.jpeg" class="img-fluid mh-100" alt="">
+                        </div>
+                        <!-- end product header -->
+
+                        <!-- start product footer -->
+                        <div class="text-center product-footer d-flex flex-column justify-content-center align-items-center py-3 px-0">
+                          <h3>Apple Iphone 11</h3>
+                          <div class="rating-container d-flex align-items-center justify-content-center">
+                            <input type="radio" name="rate" id="radio-5" class="d-none">
+                            <label for="radio-5" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-4" class="d-none">
+                            <label for="radio-4" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-3" class="d-none">
+                            <label for="radio-3" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-2" class="d-none">
+                            <label for="radio-2" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-1" class="d-none">
+                            <label for="radio-1" class="fas fa-star"></label>
+                          </div>
+                          <div class="product-price">
+                            <h4 class="h2" >$750</h4>
+                          </div>
+
+                          <button type="button" class="d-inline-block text-uppercase black1-color w-100 py-4 px-0 product-btn">Add To Cart</button>
+                          <!-- start add to favourit -->
+                          <ul class="list-unstyled d-flex justify-content-center align-items-center">
+                            <li class="mr-3">
+                              <a href="#" class="d-flex justify-content-center align-items-center">
+                                <i class="first-color far fa-eye"></i>
+                              </a>
+                            </li>
+                            <li class="mr-3">
+                              <a href="#" class="d-flex justify-content-center align-items-center">
+                                <i class="first-color far fa-eye"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="d-flex justify-content-center align-items-center">
+                                <i class="first-color far fa-heart"></i>
+                              </a>
+                            </li>
+                          </ul>
+                          <!-- end add to favourit -->
+
+                        </div>
+                        <!-- end product footer -->
+
+                      </div>
+                    </li>
+                  <!-- end slide one -->
+                  
+                  <!-- start slide two -->
+                    <li class="glide__slide">
+                      <div class="position-relative text-center d-flex flex-column product">
+                        <!-- start product header -->
+                        <div class="product-header">
+                          <img src="public/assets/images/products/headphone/headphone10.jpeg" class="img-fluid mh-100" alt="">
+                        </div>
+                        <!-- end product header -->
+
+                        <!-- start product footer -->
+                        <div class="text-center product-footer d-flex flex-column justify-content-center align-items-center py-3 px-0">
+                          <h3>Apple Iphone 11</h3>
+                          <div class="rating-container d-flex align-items-center justify-content-center">
+                            <input type="radio" name="rate" id="radio-5" class="d-none">
+                            <label for="radio-5" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-4" class="d-none">
+                            <label for="radio-4" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-3" class="d-none">
+                            <label for="radio-3" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-2" class="d-none">
+                            <label for="radio-2" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-1" class="d-none">
+                            <label for="radio-1" class="fas fa-star"></label>
+                          </div>
+                          <div class="product-price">
+                            <h4 class="h2" >$750</h4>
+                          </div>
+
+                          <button type="button" class="d-inline-block text-uppercase black1-color w-100 py-4 px-0 product-btn">Add To Cart</button>
+                          <!-- start add to favourit -->
+                          <ul class="list-unstyled d-flex justify-content-center align-items-center">
+                            <li class="mr-3">
+                              <a href="#" class="d-flex justify-content-center align-items-center">
+                                <i class="first-color far fa-eye"></i>
+                              </a>
+                            </li>
+                            <li class="mr-3">
+                              <a href="#" class="d-flex justify-content-center align-items-center">
+                                <i class="first-color far fa-eye"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="d-flex justify-content-center align-items-center">
+                                <i class="first-color far fa-heart"></i>
+                              </a>
+                            </li>
+                          </ul>
+                          <!-- end add to favourit -->
+
+                        </div>
+                        <!-- end product footer -->
+
+                      </div>
+                    </li>
+                  <!-- end slide two -->
+                  
+                  <!-- start slide three -->
+                    <li class="glide__slide">
+                      <div class="position-relative text-center d-flex flex-column product">
+                        <!-- start product header -->
+                        <div class="product-header">
+                          <img src="public/assets/images/products/iPhone/iphone3.jpeg" class="img-fluid mh-100" alt="">
+                        </div>
+                        <!-- end product header -->
+
+                        <!-- start product footer -->
+                        <div class="text-center product-footer d-flex flex-column justify-content-center align-items-center py-3 px-0">
+                          <h3>Apple Iphone 11</h3>
+                          <div class="rating-container d-flex align-items-center justify-content-center">
+                            <input type="radio" name="rate" id="radio-5" class="d-none">
+                            <label for="radio-5" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-4" class="d-none">
+                            <label for="radio-4" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-3" class="d-none">
+                            <label for="radio-3" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-2" class="d-none">
+                            <label for="radio-2" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-1" class="d-none">
+                            <label for="radio-1" class="fas fa-star"></label>
+                          </div>
+                          <div class="product-price">
+                            <h4 class="h2" >$750</h4>
+                          </div>
+
+                          <button type="button" class="d-inline-block text-uppercase black1-color w-100 py-4 px-0 product-btn">Add To Cart</button>
+                          <!-- start add to favourit -->
+                          <ul class="list-unstyled d-flex justify-content-center align-items-center">
+                            <li class="mr-3">
+                              <a href="#" class="d-flex justify-content-center align-items-center">
+                                <i class="first-color far fa-eye"></i>
+                              </a>
+                            </li>
+                            <li class="mr-3">
+                              <a href="#" class="d-flex justify-content-center align-items-center">
+                                <i class="first-color far fa-eye"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="d-flex justify-content-center align-items-center">
+                                <i class="first-color far fa-heart"></i>
+                              </a>
+                            </li>
+                          </ul>
+                          <!-- end add to favourit -->
+
+                        </div>
+                        <!-- end product footer -->
+
+                      </div>
+                    </li>
+                  <!-- end slide three -->
+                  
+                  <!-- start slide four -->
+                    <li class="glide__slide">
+                      <div class="position-relative text-center d-flex flex-column product">
+                        <!-- start product header -->
+                        <div class="product-header">
+                          <img src="public/assets/images/products/sumsung/samsung2.jpeg" class="img-fluid mh-100" alt="">
+                        </div>
+                        <!-- end product header -->
+
+                        <!-- start product footer -->
+                        <div class="text-center product-footer d-flex flex-column justify-content-center align-items-center py-3 px-0">
+                          <h3>Apple Iphone 11</h3>
+                          <div class="rating-container d-flex align-items-center justify-content-center">
+                            <input type="radio" name="rate" id="radio-5" class="d-none">
+                            <label for="radio-5" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-4" class="d-none">
+                            <label for="radio-4" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-3" class="d-none">
+                            <label for="radio-3" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-2" class="d-none">
+                            <label for="radio-2" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-1" class="d-none">
+                            <label for="radio-1" class="fas fa-star"></label>
+                          </div>
+                          <div class="product-price">
+                            <h4 class="h2" >$750</h4>
+                          </div>
+
+                          <button type="button" class="d-inline-block text-uppercase black1-color w-100 py-4 px-0 product-btn">Add To Cart</button>
+                          <!-- start add to favourit -->
+                          <ul class="list-unstyled d-flex justify-content-center align-items-center">
+                            <li class="mr-3">
+                              <a href="#" class="d-flex justify-content-center align-items-center">
+                                <i class="first-color far fa-eye"></i>
+                              </a>
+                            </li>
+                            <li class="mr-3">
+                              <a href="#" class="d-flex justify-content-center align-items-center">
+                                <i class="first-color far fa-eye"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="d-flex justify-content-center align-items-center">
+                                <i class="first-color far fa-heart"></i>
+                              </a>
+                            </li>
+                          </ul>
+                          <!-- end add to favourit -->
+
+                        </div>
+                        <!-- end product footer -->
+
+                      </div>
+                    </li>
+                  <!-- end slide four -->
+                  
+                  <!-- start slide five -->
+                    <li class="glide__slide">
+                      <div class="position-relative text-center d-flex flex-column product">
+                        <!-- start product header -->
+                        <div class="product-header">
+                          <img src="public/assets/images/products/headphone/headphone4.jpeg" class="img-fluid mh-100" alt="">
+                        </div>
+                        <!-- end product header -->
+
+                        <!-- start product footer -->
+                        <div class="text-center product-footer d-flex flex-column justify-content-center align-items-center py-3 px-0">
+                          <h3>Apple Iphone 11</h3>
+                          <div class="rating-container d-flex align-items-center justify-content-center">
+                            <input type="radio" name="rate" id="radio-5" class="d-none">
+                            <label for="radio-5" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-4" class="d-none">
+                            <label for="radio-4" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-3" class="d-none">
+                            <label for="radio-3" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-2" class="d-none">
+                            <label for="radio-2" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-1" class="d-none">
+                            <label for="radio-1" class="fas fa-star"></label>
+                          </div>
+                          <div class="product-price">
+                            <h4 class="h2" >$750</h4>
+                          </div>
+
+                          <button type="button" class="d-inline-block text-uppercase black1-color w-100 py-4 px-0 product-btn">Add To Cart</button>
+                          <!-- start add to favourit -->
+                          <ul class="list-unstyled d-flex justify-content-center align-items-center">
+                            <li class="mr-3">
+                              <a href="#" class="d-flex justify-content-center align-items-center">
+                                <i class="first-color far fa-eye"></i>
+                              </a>
+                            </li>
+                            <li class="mr-3">
+                              <a href="#" class="d-flex justify-content-center align-items-center">
+                                <i class="first-color far fa-eye"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="d-flex justify-content-center align-items-center">
+                                <i class="first-color far fa-heart"></i>
+                              </a>
+                            </li>
+                          </ul>
+                          <!-- end add to favourit -->
+
+                        </div>
+                        <!-- end product footer -->
+
+                      </div>
+                    </li>
+                  <!-- end slide five -->
+                  
+                  <!-- start slide six -->
+                    <li class="glide__slide">
+                      <div class="position-relative text-center d-flex flex-column product">
+                        <!-- start product header -->
+                        <div class="product-header">
+                          <img src="public/assets/images/products/sumsung/samsung5.jpeg" class="img-fluid mh-100" alt="">
+                        </div>
+                        <!-- end product header -->
+
+                        <!-- start product footer -->
+                        <div class="text-center product-footer d-flex flex-column justify-content-center align-items-center py-3 px-0">
+                          <h3>Apple Iphone 11</h3>
+                          <div class="rating-container d-flex align-items-center justify-content-center">
+                            <input type="radio" name="rate" id="radio-5" class="d-none">
+                            <label for="radio-5" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-4" class="d-none">
+                            <label for="radio-4" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-3" class="d-none">
+                            <label for="radio-3" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-2" class="d-none">
+                            <label for="radio-2" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-1" class="d-none">
+                            <label for="radio-1" class="fas fa-star"></label>
+                          </div>
+                          <div class="product-price">
+                            <h4 class="h2" >$750</h4>
+                          </div>
+
+                          <button type="button" class="d-inline-block text-uppercase black1-color w-100 py-4 px-0 product-btn">Add To Cart</button>
+                          <!-- start add to favourit -->
+                          <ul class="list-unstyled d-flex justify-content-center align-items-center">
+                            <li class="mr-3">
+                              <a href="#" class="d-flex justify-content-center align-items-center">
+                                <i class="first-color far fa-eye"></i>
+                              </a>
+                            </li>
+                            <li class="mr-3">
+                              <a href="#" class="d-flex justify-content-center align-items-center">
+                                <i class="first-color far fa-eye"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="d-flex justify-content-center align-items-center">
+                                <i class="first-color far fa-heart"></i>
+                              </a>
+                            </li>
+                          </ul>
+                          <!-- end add to favourit -->
+
+                        </div>
+                        <!-- end product footer -->
+
+                      </div>
+                    </li>
+                  <!-- end slide six -->
+                  
+                  <!-- start slide seven -->
+                    <li class="glide__slide">
+                      <div class="position-relative text-center d-flex flex-column product">
+                        <!-- start product header -->
+                        <div class="product-header">
+                          <img src="public/assets/images/products/headphone/headphone5.jpeg" class="img-fluid mh-100" alt="">
+                        </div>
+                        <!-- end product header -->
+
+                        <!-- start product footer -->
+                        <div class="text-center product-footer d-flex flex-column justify-content-center align-items-center py-3 px-0">
+                          <h3>Apple Iphone 11</h3>
+                          <div class="rating-container d-flex align-items-center justify-content-center">
+                            <input type="radio" name="rate" id="radio-5" class="d-none">
+                            <label for="radio-5" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-4" class="d-none">
+                            <label for="radio-4" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-3" class="d-none">
+                            <label for="radio-3" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-2" class="d-none">
+                            <label for="radio-2" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-1" class="d-none">
+                            <label for="radio-1" class="fas fa-star"></label>
+                          </div>
+                          <div class="product-price">
+                            <h4 class="h2" >$750</h4>
+                          </div>
+
+                          <button type="button" class="d-inline-block text-uppercase black1-color w-100 py-4 px-0 product-btn">Add To Cart</button>
+                          <!-- start add to favourit -->
+                          <ul class="list-unstyled d-flex justify-content-center align-items-center">
+                            <li class="mr-3">
+                              <a href="#" class="d-flex justify-content-center align-items-center">
+                                <i class="first-color far fa-eye"></i>
+                              </a>
+                            </li>
+                            <li class="mr-3">
+                              <a href="#" class="d-flex justify-content-center align-items-center">
+                                <i class="first-color far fa-eye"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="d-flex justify-content-center align-items-center">
+                                <i class="first-color far fa-heart"></i>
+                              </a>
+                            </li>
+                          </ul>
+                          <!-- end add to favourit -->
+
+                        </div>
+                        <!-- end product footer -->
+
+                      </div>
+                    </li>
+                  <!-- end slide seven -->
+                  
+                  <!-- start slide eight -->
+                    <li class="glide__slide">
+                      <div class="position-relative text-center d-flex flex-column product">
+                        <!-- start product header -->
+                        <div class="product-header">
+                          <img src="public/assets/images/products/sumsung/samsung2.jpeg" class="img-fluid mh-100" alt="">
+                        </div>
+                        <!-- end product header -->
+
+                        <!-- start product footer -->
+                        <div class="text-center product-footer d-flex flex-column justify-content-center align-items-center py-3 px-0">
+                          <h3>Apple Iphone 11</h3>
+                          <div class="rating-container d-flex align-items-center justify-content-center">
+                            <input type="radio" name="rate" id="radio-5" class="d-none">
+                            <label for="radio-5" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-4" class="d-none">
+                            <label for="radio-4" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-3" class="d-none">
+                            <label for="radio-3" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-2" class="d-none">
+                            <label for="radio-2" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-1" class="d-none">
+                            <label for="radio-1" class="fas fa-star"></label>
+                          </div>
+                          <div class="product-price">
+                            <h4 class="h2" >$750</h4>
+                          </div>
+
+                          <button type="button" class="d-inline-block text-uppercase black1-color w-100 py-4 px-0 product-btn">Add To Cart</button>
+                          <!-- start add to favourit -->
+                          <ul class="list-unstyled d-flex justify-content-center align-items-center">
+                            <li class="mr-3">
+                              <a href="#" class="d-flex justify-content-center align-items-center">
+                                <i class="first-color far fa-eye"></i>
+                              </a>
+                            </li>
+                            <li class="mr-3">
+                              <a href="#" class="d-flex justify-content-center align-items-center">
+                                <i class="first-color far fa-eye"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="d-flex justify-content-center align-items-center">
+                                <i class="first-color far fa-heart"></i>
+                              </a>
+                            </li>
+                          </ul>
+                          <!-- end add to favourit -->
+
+                        </div>
+                        <!-- end product footer -->
+
+                      </div>
+                    </li>
+                  <!-- end slide eight -->
+                  
+                  <!-- start slide nine -->
+                    <li class="glide__slide">
+                      <div class="position-relative text-center d-flex flex-column product">
+                        <!-- start product header -->
+                        <div class="product-header">
+                          <img src="public/assets/images/products/iPhone/iphone2.jpeg" class="img-fluid mh-100" alt="">
+                        </div>
+                        <!-- end product header -->
+
+                        <!-- start product footer -->
+                        <div class="text-center product-footer d-flex flex-column justify-content-center align-items-center py-3 px-0">
+                          <h3>Apple Iphone 11</h3>
+                          <div class="rating-container d-flex align-items-center justify-content-center">
+                            <input type="radio" name="rate" id="radio-5" class="d-none">
+                            <label for="radio-5" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-4" class="d-none">
+                            <label for="radio-4" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-3" class="d-none">
+                            <label for="radio-3" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-2" class="d-none">
+                            <label for="radio-2" class="fas fa-star mx-2"></label>
+                            <input type="radio" name="rate" id="radio-1" class="d-none">
+                            <label for="radio-1" class="fas fa-star"></label>
+                          </div>
+                          <div class="product-price">
+                            <h4 class="h2" >$750</h4>
+                          </div>
+
+                          <button type="button" class="d-inline-block text-uppercase black1-color w-100 py-4 px-0 product-btn">Add To Cart</button>
+                          <!-- start add to favourit -->
+                          <ul class="list-unstyled d-flex justify-content-center align-items-center">
+                            <li class="mr-3">
+                              <a href="#" class="d-flex justify-content-center align-items-center">
+                                <i class="first-color far fa-eye"></i>
+                              </a>
+                            </li>
+                            <li class="mr-3">
+                              <a href="#" class="d-flex justify-content-center align-items-center">
+                                <i class="first-color far fa-eye"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="d-flex justify-content-center align-items-center">
+                                <i class="first-color far fa-heart"></i>
+                              </a>
+                            </li>
+                          </ul>
+                          <!-- end add to favourit -->
+
+                        </div>
+                        <!-- end product footer -->
+
+                      </div>
+                    </li>
+                  <!-- end slide nine -->
+                </ul>
+                
+              </div>
+              <!-- slider arrows -->
+              <div class="glide__arrows" data-glide-el="controls">
+                <button class="p-3 mx-3 glide__arrow glide__arrow--left" data-glide-dir="<">
+                  <svg>
+                    <use xlink:href="public/assets/images/sprite.svg#icon-arrow-left2"></use>
+                  </svg>
+                </button>
+                <button class="p-3 mx-3 glide__arrow glide__arrow--right" data-glide-dir=">">
+                  <svg>
+                    <use xlink:href="public/assets/images/sprite.svg#icon-arrow-right2"></use>
+                  </svg>
+                </button>
+              </div>
+        
+            </div>
+          </div>
+        <!-- end latest products slider -->
+
+      </div>
+    </section>
+    <!-- end latest products section -->
+
+    <!-- start category section -->
+    <section class="mb-5 category" id="category">
+      <div class="container">
+
+        <div class="tab__list">
+          <div class="title-container d-flex justify-content-center align-items-center tabs">
+            
+            <div class="mr-4 section-titles category__titles ">
+              <div class="justify-content-center align-items-center section-title filter-btn active" data-id="All Products">
+                <span class="dot"></span>
+                <h3 class="h2 pl-2 primary-title">All Products</h3>
+              </div>
+            </div>
+
+            <div class="mr-4 section-titles">
+              <div class="justify-content-center align-items-center section-title filter-btn" data-id="Trending Products">
+                <span class="dot"></span>
+                <h3 class="h2 pl-2 primary-title">Trending Products</h3>
+              </div>
+            </div>
+
+            <div class="mr-4 section-titles">
+              <div class="justify-content-center align-items-center section-title filter-btn" data-id="Special Products">
+                <span class="dot"></span>
+                <h3 class="h2 pl-2 primary-title">Special Products</h3>
+              </div>
+            </div>
+
+            <div class="mr-4 section-titles">
+              <div class="justify-content-center align-items-center section-title filter-btn" data-id="Featured Products">
+                <span class="dot"></span>
+                <h3 class="h2 pl-2 primary-title">Featured Products</h3>
               </div>
             </div>
 
           </div>
         </div>
 
-      </section>
-      <!-- end collection section -->
+        <div class="category-container" data-aos="fade-up" data-aos-duration="1200">
+          <div class="all-products-content" id="all_products">
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <!-- end category section -->
 
-    </div>
-  <!-- end main container -->
+    <!-- start facility section -->
+    <section class="facility-section section" id="facility">
+      <div class="container">
+
+        <div class="align-items-center facility-contianer" data-aos="fade-up" data-aos-duration="1200">
+
+          <div class="text-center facility-box">
+            <div class="position-relative d-inline-block rounded-circle mb-4 facility-img-container">
+              <svg>
+                <use xlink:href="public/assets/images/sprite.svg#icon-airplane"></use>
+              </svg>
+            </div>
+            <p>FREE SHIPPING WORLD WIDE</p>
+          </div>
+
+          <div class="text-center facility-box">
+            <div class="position-relative d-inline-block rounded-circle mb-4 facility-img-container">
+              <svg>
+                <use xlink:href="public/assets/images/sprite.svg#icon-credit-card-alt"></use>
+              </svg>
+            </div>
+            <p>100% MONEY BACK GUARANTEE</p>
+          </div>
+
+          <div class="text-center facility-box">
+            <div class="position-relative d-inline-block rounded-circle mb-4 facility-img-container">
+              <svg>
+                <use xlink:href="public/assets/images/sprite.svg#icon-credit-card"></use>
+              </svg>
+            </div>
+            <p>MANY PAYMENT GATWAYS</p>
+          </div>
+
+          <div class="text-center facility-box">
+            <div class="position-relative d-inline-block rounded-circle mb-4 facility-img-container">
+              <svg>
+                <use xlink:href="public/assets/images/sprite.svg#icon-headphones"></use>
+              </svg>
+            </div>
+            <p>24/7 ONLINE SUPPORT</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- end facility section -->
+
+    <!-- start testimonial section -->
+    <section class="section text-center position-relative testimonial" id="testimonial">
+      <div class="container-fluid">
+        <div class="h-100 p-3 testimonial-container">
+          <div class="glide" id="glide-3">
+            <div class="glide__track" data-glide-el="track">
+              <!-- start testimonials slider -->
+              <ul class="glide__slides">
+
+                <!-- start customer testimonial 1 -->
+                <li class="glide__slide">
+  
+                  <div class="my-0 mx-auto h-100 testimonial-box">
+                    <div class="mb-5 client-image">
+                      <img src="public/assets/images/profile1.jpg" class="rounded-circle mw-100" alt="profile">
+                    </div>
+                    <p class="mt-0 mx-auto mb-5 font-italic">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae fuga hic nesciunt tempore
+                      quibusdam consequatur eligendi unde officia ex quae.ipsum dolor sit amet consectetur adipisicing
+                      elit. Recusandae fuga hic nesciunt tempore
+                      quibusdam consequatur eligendi unde officia ex quae.</p>
+                    <div class="client-info">
+                      <h3 class="mb-3">John Smith</h3>
+                      <span>Founder at Apple</span>
+                    </div>
+                  </div>
+                </li>
+                <!-- end customer testimonial 1 -->
+
+                <!-- start customer testimonial 2 -->
+                <li class="glide__slide">
+  
+                  <div class="my-0 mx-auto h-100 testimonial-box">
+                    <div class="mb-5 client-image">
+                      <img src="public/assets/images/profile2.jpg" class="rounded-circle mw-100" alt="profile">
+                    </div>
+                    <p class="mt-0 mx-auto mb-5 font-italic">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae fuga hic nesciunt tempore
+                      quibusdam consequatur eligendi unde officia ex quae.ipsum dolor sit amet consectetur adipisicing
+                      elit. Recusandae fuga hic nesciunt tempore
+                      quibusdam consequatur eligendi unde officia ex quae.</p>
+                    <div class="client-info">
+                      <h3 class="mb-3">John Smith</h3>
+                      <span>Founder at Apple</span>
+                    </div>
+                  </div>
+                </li>
+                <!-- end customer testimonial 2 -->
+
+                <!-- start customer testimonial 3 -->
+                <li class="glide__slide">
+  
+                  <div class="my-0 mx-auto h-100 testimonial-box">
+                    <div class="mb-5 client-image">
+                      <img src="public/assets/images/profile3.jpg" class="rounded-circle mw-100" alt="profile">
+                    </div>
+                    <p class="mt-0 mx-auto mb-5 font-italic">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae fuga hic nesciunt tempore
+                      quibusdam consequatur eligendi unde officia ex quae.ipsum dolor sit amet consectetur adipisicing
+                      elit. Recusandae fuga hic nesciunt tempore
+                      quibusdam consequatur eligendi unde officia ex quae.</p>
+                    <div class="client-info">
+                      <h3 class="mb-3">John Smith</h3>
+                      <span>Founder at Apple</span>
+                    </div>
+                  </div>
+                </li>
+                <!-- end customer testimonial 3 -->
+
+                <!-- start customer testimonial 4 -->  
+                <li class="glide__slide">
+  
+                  <div class="my-0 mx-auto h-100 testimonial-box">
+                    <div class="mb-5 client-image">
+                      <img src="public/assets/images/profile4.jpg" class="rounded-circle mw-100" alt="profile">
+                    </div>
+                    <p class="mt-0 mx-auto mb-5 font-italic">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae fuga hic nesciunt tempore
+                      quibusdam consequatur eligendi unde officia ex quae.ipsum dolor sit amet consectetur adipisicing
+                      elit. Recusandae fuga hic nesciunt tempore
+                      quibusdam consequatur eligendi unde officia ex quae.</p>
+                    <div class="client-info">
+                      <h3 class="mb-3">John Smith</h3>
+                      <span>Founder at Apple</span>
+                    </div>
+                  </div>
+                </li>
+                <!-- end customer testimonial 4 -->  
+
+              </ul>
+              <!-- end testimonials slider -->
+            </div>
+  
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+              <button class="glide__bullet" data-glide-dir="=0"></button>
+              <button class="glide__bullet" data-glide-dir="=1"></button>
+              <button class="glide__bullet" data-glide-dir="=2"></button>
+              <button class="glide__bullet" data-glide-dir="=3"></button>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end testimonial section -->
+
+    <!-- start news section -->
+    <section class="section news" id="news">
+
+      <div class="container" data-aos="fade-up" data-aos-duration="1200">
+
+        <div class="row justify-content-center mt-5 mb-5 p-4 first-bg">
+          <div class="mr-4 section-titles">
+            <div class="justify-content-center align-items-center section-title">
+              <span class="dot"></span>
+              <h3 class="h2 pl-2 primary-title">Phone News</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="news__container">
+
+          <div class="glide" id="glide-4">
+
+            <div class="glide__track" data-glide-el="track">
+
+              <!-- start news slider -->
+              <ul class="glide__slides">
+                
+                <!-- start news card 1 -->
+                <li class="glide__slide">
+                  <div class="card">
+                    <img src="public/assets/images/news1.jpg" class="card-img-top" alt="news1">
+                    <div class="card-body">
+                      <h3 class="mb-3 card-title">Styling White Shirts After A Cool Day</h3>
+                      <span class="d-inline-block mb-3">By Admin</span>
+                      <p class="mb-3 card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium, numquam non provident rem sed minus natus unde vel modi!
+                      </p>
+                      <a href="#"><button>Read More</button></a>
+                    </div>
+                  </div> 
+                </li>
+                <!-- end news card 1 -->
+
+                <!-- start news card 2 -->
+                <li class="glide__slide">
+                  <div class="card">
+                    <img src="public/assets/images/news2.jpg" class="card-img-top" alt="news1">
+                    <div class="card-body">
+                      <h3 class="mb-3 card-title">Styling White Shirts After A Cool Day</h3>
+                      <span class="d-inline-block mb-3">By Admin</span>
+                      <p class="mb-3 card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium, numquam non provident rem sed minus natus unde vel modi!
+                      </p>
+                      <a href="#"><button>Read More</button></a>
+                    </div>
+                  </div> 
+                </li>
+                <!-- end news card 2 -->
+
+                <!-- start news card 3 -->
+                <li class="glide__slide">
+                  <div class="card">
+                    <img src="public/assets/images/news3.jpg" class="card-img-top" alt="news1">
+                    <div class="card-body">
+                      <h3 class="mb-3 card-title">Styling White Shirts After A Cool Day</h3>
+                      <span class="d-inline-block mb-3">By Admin</span>
+                      <p class="mb-3 card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium, numquam non provident rem sed minus natus unde vel modi!
+                      </p>
+                      <a href="#"><button>Read More</button></a>
+                    </div>
+                  </div> 
+                </li>
+                <!-- end news card 3 -->
+
+                <!-- start news card 4 -->
+                <li class="glide__slide">
+                  <div class="card">
+                    <img src="public/assets/images/news4.jpg" class="card-img-top" alt="news1">
+                    <div class="card-body">
+                      <h3 class="mb-3 card-title">Styling White Shirts After A Cool Day</h3>
+                      <span class="d-inline-block mb-3">By Admin</span>
+                      <p class="mb-3 card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium, numquam non provident rem sed minus natus unde vel modi!
+                      </p>
+                      <a href="#"><button>Read More</button></a>
+                    </div>
+                  </div> 
+                </li>
+                <!-- end news card 4 -->
+
+                <!-- start news card 4 -->
+                <li class="glide__slide">
+                  <div class="card">
+                    <img src="public/assets/images/news5.jpg" class="card-img-top" alt="news1">
+                    <div class="card-body">
+                      <h3 class="mb-3 card-title">Styling White Shirts After A Cool Day</h3>
+                      <span class="d-inline-block mb-3">By Admin</span>
+                      <p class="mb-3 card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium, numquam non provident rem sed minus natus unde vel modi!
+                      </p>
+                      <a href="#"><button>Read More</button></a>
+                    </div>
+                  </div> 
+                </li>
+                <!-- end news card 4 -->
+
+              </ul>
+              <!-- end news slider -->
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- end news section -->
+
+    <!-- start newsletter section -->
+    <section class="section newsletter" id="contact">
+      <div class="container" data-aos="fade-up" data-aos-duration="1200">
+        <div class="d-flex justify-content-between align-items-center newsletter__content">
+          <div class="newsletter-data">
+            <h3 class="mb-3">SUBSCRIBE TO OUR NEWSLETTER</h3>
+            <p>A short sentence describing what someone will receive by subscribing</p>
+          </div>
+          <form action="#">
+            <input type="email" placeholder="Enter your email address" class="d-inline-block p-4 newsletter-email">
+            <a class="newsletter-link" href="#">subscribe</a>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- end newsletter section -->
 
   </main>
   <!-- end main content -->
+  
+  <!-- start footer -->
+  <footer class="footer black1-bg" id="footer">
+    <div class="follow-us second-bg">
+        <div class="container">
+            <div class="row py-4 d-flex align-items-center">
+                <div class="col-lg-12 text-center">
+                    <a href=""><i class="fab fa-facebook-f ml-4 black1-color"></i></a>
+                    <a href=""><i class="fab fa-twitter ml-4 black1-color"></i></a>
+                    <a href=""><i class="fab fa-google-plus-g ml-4 black1-color"></i></a>
+                    <a href=""><i class="fab fa-linkedin-in ml-4 black1-color"></i></a>
+                    <a href=""><i class="fab fa-instagram ml-4 black1-color"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center text-md-left mt-5">
+        <div class="row">
+            <div class="col-lg-3 mx-auto mb-4">
+              <h3 class="mb-5 first-color">EXTRAS</h3>
+              <ul class="list-unstyled">
+                <li><a href="#" class="gray-color">Brands</a></li>
+                <li><a href="#" class="gray-color">Gift Certificates</a></li>
+                <li><a href="#" class="gray-color">Affiliate</a></li>
+                <li><a href="#" class="gray-color">Specials</a></li>
+                <li><a href="#" class="gray-color">Site Map</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 mx-auto mb-4 black-color">
+              <h3 class="mb-5 first-color">INFORMATION</h3>
+              <ul class="list-unstyled">
+                <li><a href="#" class="gray-color">About Us</a></li>
+                <li><a href="#" class="gray-color">Privacy Policy</a></li>
+                <li><a href="#" class="gray-color">Terms & Conditions</a></li>
+                <li><a href="#" class="gray-color">Contact Us</a></li>
+                <li><a href="#" class="gray-color">Site Map</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 mx-auto mb-4 black-color">
+              <h3 class="mb-5 first-color">MY ACCOUNT</h3>
+              <ul class="list-unstyled">
+                <li><a href="#" class="gray-color">My Account</a></li>
+                <li><a href="#" class="gray-color">Order History</a></li>
+                <li><a href="#" class="gray-color">Wish List</a></li>
+                <li><a href="#" class="gray-color">Newsletter</a></li>
+                <li><a href="#" class="gray-color">Returns</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 mx-auto mb-4 black-color">
+              <h3 class="mb-5 first-color">CONTACT US</h3>
+              <div class="gray-color">
+                <span>
+                  <svg>
+                    <use xlink:href="public/assets/images/sprite.svg#icon-location"></use>
+                  </svg>
+                </span>
+                17 al saalam st shoubra El kheima, Cairo, Egypt.
+              </div>
+              <div class="gray-color">
+                <span>
+                  <svg>
+                    <use xlink:href="public/assets/images/sprite.svg#icon-envelop"></use>
+                  </svg>
+                </span>
+                company@gmail.com
+              </div>
+              <div class="gray-color">
+                <span>
+                  <svg>
+                    <use xlink:href="public/assets/images/sprite.svg#icon-phone"></use>
+                  </svg>
+                </span>
+                456-456-4512
+              </div>
+              <div class="gray-color">
+                <span>
+                  <svg>
+                    <use xlink:href="public/assets/images/sprite.svg#icon-paperplane"></use>
+                  </svg>
+                </span>
+                Cairo, Egypt.
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright black1-color second-bg text-center py-3">
+        <p>All Rights Reserved &copy;
+          <a href="#" class="black1-color"> Phone Shop 2021 </a>
+        </p>
+    </div>
+
+  </footer>
+  <!-- end footer -->
+  
+  <!-- start popup -->
+  <div class="w-100 vh-100 position-fixed popup hide-popup">
+    <div class="d-table position-absolute p-4 my-0 mx-auto popup-content">
+      
+      <div class="d-flex justify-content-center align-items-center rounded-circle position-absolute p-4 popup-close">
+        <svg>
+          <use xlink:href="public/assets/images/sprite.svg#icon-cross"></use>
+        </svg>
+      </div>
+
+      <div class="d-table-cell w-50 h-100 popup-left">
+        <div class="w-100 popup-img-container">
+          <img class="d-block mw-100 popup-img" src="public/assets/images/popup.jpg" alt="popup">
+        </div>
+      </div>
+
+      <div class="d-table-cell w-50 popup-right">
+        <div class="text-center my-0 mx-auto right-content">
+          <h2 class="mb-4 font-weight-bold h1">Get Discount <span>30%</span> Off</h2>
+          <p class="lead mb-4">Sign up to our newsletter and save 30% for you next purchase. No spam, we promise!
+          </p>
+          <form action="#" class="">
+            <input type="email" placeholder="Enter your email..." class="w-100 mb-3 popup__form">
+            <a href="#" class="d-inline-block">Subscribe</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end popup -->
+  
+  <!-- start goto top -->
+  <a href="#home" class="goto-top scroll-link">
+    <svg>
+      <use xlink:href="public/assets/images/sprite.svg#icon-arrow-up"></use>
+    </svg>
+  </a>
+  <!-- end goto top -->
 
 
-
-    <!-- JQuery Library Script-->
-    <script src="public/assets/js/jQuery 3.5.1.min.js"></script>
-    <!-- Glide Library Script -->
-    <script src="public/assets/js/glide.min.js"></script>
-    <!-- AOS Library Script -->
-    <script src="public/assets/js/aos.js"></script>
-    <!-- Popper Library Script-->
-    <script src="public/assets/js/popper.min.js"></script>
-    <!-- Bootstrap Library Script-->
-    <script src="public/assets/js/bootstrap.min.js"></script>
-    <!-- Font Awosome -->
-    <script src="https://kit.fontawesome.com/cd0c469065.js" crossorigin="anonymous"></script>
-    <!-- Slider JavaScript -->
-    <script src="public/assets/js/slider.js"></script>
-    <!-- Main JavaScript -->
-    <script src="public/assets/js/app.js"></script>
+  <!-- JQuery Library Script-->
+  <script src="public/assets/js/jQuery 3.5.1.min.js"></script>
+  <!-- Popper Library Script-->
+  <script src="public/assets/js/popper.min.js"></script>
+  <!-- Bootstrap Library Script-->
+  <script src="public/assets/js/bootstrap.min.js"></script>
+  <!-- Font Awosome -->
+  <script src="https://kit.fontawesome.com/cd0c469065.js" crossorigin="anonymous"></script>
+  <!-- Glide Library Script -->
+  <script src="public/assets/js/glide.min.js"></script>
+  <!-- AOS Library Script -->
+  <script src="public/assets/js/aos.js"></script>
+  <!-- products JavaScript -->
+  <script src="public/assets/js/products.js"></script>
+  <!-- Slider JavaScript -->
+  <script src="public/assets/js/slider.js"></script>
+  <!-- Main JavaScript -->
+  <script src="public/assets/js/app.js"></script>
 </body>
 </html>
-<!-- start slide one -->
-<!-- <li class="col-sm-12 glide__slide">
-  <div class="d-flex justify-content-center align-items-center position-relative h-100 pt-5 my-0 mx-auto hero-product">
-    <div class="py-0 px-5 hero-product-left">
-      <span>New Inspiration 2020</span>
-      <h2 class="my-3 mx-0 h1">Phone Made For You</h2>
-      <p class="mb-3">Trending From Mobile and Headphone Style Collections</p>
-      <a href="#"><button class="m-3 d-inline-block dt py-3 px-5 hero-product-btn">SHOP NOW</button></a>
-    </div>
-    <div class="position-relative text-center hero-product-right">
-      <div class="product-img-container">
-        <img src="public/assets/images/banner_01.png" alt="Product One" class="banner_01">
-      </div>
-    </div>
-  </div>
-</li> -->
-<!-- end slide one -->
-
-<!-- start slide two -->
-<!-- <li class="col-sm-12 glide__slide">
-  <div class="d-flex justify-content-center align-items-center position-relative h-100 pt-5 my-0 mx-auto hero-product">
-    <div class="py-0 px-5 hero-product-left">
-      <span>New Inspiration 2020</span>
-      <h2 class="my-3 mx-0 h1">Phone Made For You</h2>
-      <p class="mb-3">Trending From Mobile and Headphone Style Collections</p>
-      <a href="#"><button class="m-3 d-inline-block dt py-3 px-5 hero-product-btn">SHOP NOW</button></a>
-    </div>
-    <div class="position-relative text-center hero-product-right">
-      <div class="product-img-container">
-        <img src="public/assets/images/banner_02.png" alt="Product One" class="banner_02">
-      </div>
-    </div>
-  </div>
-</li> -->
-<!-- end slide two -->
