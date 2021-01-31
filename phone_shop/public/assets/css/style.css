@@ -573,7 +573,6 @@ span.dot::before{
   }
 }
 /* end Category media */
-
 /* end Category section */
 
 /* start facility section */
@@ -637,7 +636,6 @@ span.dot::before{
   }
 }
 /* end facility media */
-
 /* end facility section */
 
 /* start testimonial section */
@@ -756,7 +754,6 @@ span.dot::before{
 }
 /* end news section */
 
-
 /* start newsletter section */
 .newsletter{
   padding: 6rem 0;
@@ -857,8 +854,6 @@ footer span svg{
   color: var(--firstcolor);
 }
 /* end footer section */
-
-
 
 /* start popup and scroll to top */
 .popup{
@@ -965,7 +960,7 @@ footer span svg{
 .show-top:link,
 .show-top:visited{
   visibility: visible;
-  z-index: 999;
+  z-index: 1999;
 }
 @keyframes bounce{
   0% {
