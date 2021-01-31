@@ -1,0 +1,11 @@
+@font-face{
+    font-family: Archivo-Bold;
+    src: url('../fonts/Archivo/Archivo-Bold.ttf');
+}
+@font-face{
+    font-family: Archivo-Regular;
+    src: url('../fonts/Archivo/Archivo-Regular.ttf');
+}
+:root{
+    
+}

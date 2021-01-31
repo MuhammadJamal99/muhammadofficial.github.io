@@ -15,7 +15,15 @@ $(function(){
       }, 500);
     });
   }
-  });
+  /*side bar*/ 
+  $('#sidebarCollapse').on('click', function () {
+		$('#sidebar-menu').toggleClass('active');
+	});
+	
+	$('#close-sidebar').on('click', function () {
+		$('#sidebar-menu').toggleClass('active');
+	});
+});
 
 // initialize AOS Animation
 AOS.init();

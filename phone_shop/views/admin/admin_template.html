@@ -21,46 +21,6 @@
     <link rel="styleSheet" href="../../public/assets/css/style.css"/>
 </head>
 <body>
-  <style>
-#sidebar-menu{
-  width: 250px;
-  height: 100vh;
-  top: 0;
-  left: -100%;
-  transition: 850ms;
-  z-index: 99;
-  background-color: var(--firstcolor);
-}
-#sidebar-menu.active{
-    left: 0;
-    transition: 350ms;
-}
-#sidebar-menu .sidebar-header{
-    height: 100px;
-    background-color: var(--red);
-}
-#sidebar-menu .close-sidebar i{
-    z-index: 9999;
-}
-.fa-bars{
-    margin-right: 2rem;
-    font-size: 2rem;
-}
-#sidebar-menu hr{
-    height: 1px;
-    border: none;
-}
-#sidebar-menu .sidebar-section{
-    height: 200px;
-}
-#sidebar-menu .sidebar-link{
-    height: 50px;
-}
-#sidebar-menu .sidebar-link:hover{
-    background-color: rgba(	0%, 20%, 16%,0.219);
-    cursor: pointer;
-}
-  </style>
   <!-- start header -->
   <header class="position-relative header">
 
@@ -73,6 +33,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="main-navbar">
+
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -87,9 +48,28 @@
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
-          <ul class="navbar-nav navbar-left">
+
+          <ul class="navbar-nav navbar-left ml-auto">
+            
+            <li class="mr-3 nav-item">
+              <a href="#" class="icon-item nav-link d-flex justify-content-center align-items-center rounded-circle">
+                <svg class="icon__user">
+                  <use xlink:href="public/assets/images/sprite.svg#icon-user"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mr-3 nav-item">
+              <a href="#" class="icon-item nav-link d-flex justify-content-center align-items-center rounded-circle">
+                <svg class="icon__cart">
+                  <use xlink:href="public/assets/images/sprite.svg#icon-shopping-basket"></use>
+                </svg>
+                <span id="cart__total" class="position-absolute">0</span>
+              </a>
+            </li>
 
           </ul>
+
         </div>
       </div>
     </nav>
@@ -253,14 +233,5 @@
   <script src="../../public/assets/js/slider.js"></script>
   <!-- Main JavaScript -->
   <script src="../../public/assets/js/app.js"></script>
-  <script>
-  $('#sidebarCollapse').on('click', function () {
-		$('#sidebar-menu').toggleClass('active');
-	});
-	
-	$('#close-sidebar').on('click', function () {
-		$('#sidebar-menu').toggleClass('active');
-	});
-  </script>
 </body>
 </html>
