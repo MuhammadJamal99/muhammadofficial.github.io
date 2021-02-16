@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Title Icon-->
+    <link
+      rel="shortcut icon"
+      href="public/assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <!--Title-->
+    <title>phone shop</title>
+    <!-- Owl Core Style Sheet -->
+    <link rel="stylesheet" href="public/assets/css/owl.carousel.min.css" />
+    <!-- Owl Theme Style Sheet -->
+    <link rel="stylesheet" href="public/assets/css/owl.theme.default.min.css" />
+    <!-- AOS Style Sheet -->
+    <link rel="stylesheet" href="public/assets/css/aos.css" />
+    <!--Bootstrap Style Sheet-->
+    <link rel="stylesheet" href="public/assets/css/bootstrap.min.css" />
+    <!--Font Awosome Style Sheet-->
+    <link rel="stylesheet" href="public/assets/css/all.min.css" />
+  </head>
+  <body>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-transform: capitalize;
+        transition: all 0.4s cubic-bezier(0.26,1.24,0.82,1.46);
+      }
+      .product-card-container {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        background: #ddd;
+        padding-bottom: 70px;
+      }
+      .product-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: #444;
+        z-index: -1;
+        clip-path: circle(50% at 70% 18%);
+      }
+      .product-card:hover::before {
+        clip-path: circle(47.9% at 85% 0);
+      }
+      .product-card {
+        width: 350px;
+        background: #fff;
+        box-shadow: 0.5px 10px #bbb;
+        text-align: center;
+        position: relative;
+        z-index: 0;
+        height: 600px;
+      }
+      .product-card .image img {
+        height: 300px;
+        filter: drop-shadow(5px 5px 5px #333)
+      }
+      .product-card:hover .image img {
+        transform: scale(1.1) rotate(45deg);
+      }
+      .title {
+        font-size: 30px;
+        color: #666;
+      }
+      .size {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0;
+      }
+      .size span {
+        font-size: 20px;
+        color: #666;
+      }
+      .size li {
+        font-size: 17px;
+        color: #111;
+        background: #ccc;
+        margin: 10px;
+        padding: 6px 10px;
+        cursor: pointer;
+      }
+      .size li.active {
+        background: #333;
+        color: #fff;
+      }
+      .price {
+        color: #333;
+        padding: 16px 0;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      .price span {
+        font-size: 17px;
+        font-weight: normal;
+        text-decoration: line-through;
+      }
+      .btn {
+        height: 40px;
+        width: 160px;
+        margin: 10px 0;
+        border: none;
+        outline: none;
+        font-size: 17px;
+        color: #fff;
+        background: #8f2227;
+      }
+      .btn:hover {
+        opacity: 0.9;
+        letter-spacing: 2px;
+        width: 180px;
+      }
+    </style>
+    <main>
+      <section class="product-card-container">
+        
+        <div class="product-card">
+          <div class="image">
+            <img src="public/assets/images/products/nike_shoes/shoe1.png" alt="">
+          </div>
+          <div class="content">
+            <h3 class="title">Adidas Shoes</h3>
+            <ul class="list-unstyled size">
+              <span>Size:</span>
+              <li class="active">07</li>
+              <li>08</li>
+              <li>09</li>
+              <li>10</li>
+            </ul>
+            <div class="price">$500 <span>$700</span></div>
+            <a href="#"><button class="btn">Add to Cart</button></a>
+          </div>
+        </div>
+
+      </section>
+    </main>
+    <!-- JQuery Library Script-->
+    <script src="public/assets/js/jQuery 3.5.1.min.js"></script>
+    <!-- Owl Library Script -->
+    <script src="public/assets/js/owl.carousel.min.js"></script>
+    <!-- AOS Library Script -->
+    <script src="public/assets/js/aos.js"></script>
+    <!-- Popper Library Script-->
+    <script src="public/assets/js/popper.min.js"></script>
+    <!-- Bootstrap Library Script-->
+    <script src="public/assets/js/bootstrap.min.js"></script>
+    <!-- Font Awosome -->
+    <script
+      src="https://kit.fontawesome.com/cd0c469065.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+
+    </script>
+  </body>
+</html>

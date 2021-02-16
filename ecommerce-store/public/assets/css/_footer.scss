@@ -1,0 +1,20 @@
+#footer {
+    background: $blackColor;
+    .follow-us {
+        background: $firstColor;
+        .container {
+            .row {
+                .media {
+                    a {
+                        i {
+                            color: $blackColor;
+                            &:hover {
+                                color: $secondColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

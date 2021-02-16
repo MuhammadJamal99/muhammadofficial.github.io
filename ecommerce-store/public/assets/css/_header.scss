@@ -1,0 +1,81 @@
+#header {
+    padding: 1.5rem 2.5rem;
+    .fa-bars {
+        font-size: 3rem;
+        z-index: 1000;
+        cursor: pointer;
+        color: $white;
+    }
+    .logo {
+        color: $white;
+        font-size: 2rem;
+        i {
+            padding: 0 0.5rem;
+        }
+    }
+    .header-left {
+        .search-box {
+            .fa-search {
+                top: -0.7rem;
+                left: -3.5rem;
+                font-size: 2rem;
+                cursor: pointer;
+                z-index: 1;
+                color: $darkGray;
+                &:hover ~ #search-bar {
+                    width: 25rem;
+                }
+            }
+            #search-bar {
+                top: -1.5rem;
+                right: 0.8rem;
+                height: 3.5rem;
+                width: 3.5rem;
+                font-size: 1.5rem;
+                padding: 0 1rem;
+                border: none;
+                outline: none;
+                border-radius: 5rem;
+                &:hover,
+                &:focus {
+                    width: 25rem;
+                }
+            }
+        }
+        .fa-shopping-cart {
+            font-size: 2rem;
+            cursor: pointer;
+            color: $white;
+        }
+    }
+    .navbar{
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.9);
+        display: none;
+        ul {
+            width: 35rem;
+            background: $darkGray;
+            li {
+                a {
+                    height: 4rem;
+                    width: 25rem;
+                    background: $white;
+                    color: $darkGray;
+                    border-radius: 5rem;
+                    font-size: 2rem;
+                    line-height: 4rem;
+                    &:hover {
+                        background: $secondColor;
+                        letter-spacing: 0.3rem;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+.fa-times {
+    transform: translateX(27rem);
+    padding-top: 1rem;
+}
